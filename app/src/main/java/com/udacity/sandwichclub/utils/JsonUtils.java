@@ -15,9 +15,9 @@ public class JsonUtils {
 
     private static final String SANDWICH_MAIN_NAME = "mainName";
 
-    private static final String SANDWICH_AKA = "aka";
+    private static final String SANDWICH_AKA = "alsoKnownAs";
 
-    private static final String SANDWICH_ORIGIN = "origin";
+    private static final String SANDWICH_ORIGIN = "placeOfOrigin";
 
     private static final String SANDWICH_DESCRIPTION = "description";
 
@@ -29,7 +29,7 @@ public class JsonUtils {
 
         String sandwichJson = "{\"name\":{\"mainName\":\"Ham and cheese sandwich\",\"alsoKnownAs\":[]},\"placeOfOrigin\":\"\",\"description\":\"A ham and cheese sandwich is a common type of sandwich. It is made by putting cheese and sliced ham between two slices of bread. The bread is sometimes buttered and/or toasted. Vegetables like lettuce, tomato, onion or pickle slices can also be included. Various kinds of mustard and mayonnaise are also common.\",\"image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Grilled_ham_and_cheese_014.JPG/800px-Grilled_ham_and_cheese_014.JPG\",\"ingredients\":[\"Sliced bread\",\"Cheese\",\"Ham\"]}";
 
-        JSONObject Sandwich = new JSONObject(sandwichJson);
+        JSONObject Sandwich = new JSONObject(json);
 
         JSONObject nameJson = Sandwich.getJSONObject(SANDWICH_NAME);
 
