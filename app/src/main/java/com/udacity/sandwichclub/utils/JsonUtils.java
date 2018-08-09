@@ -33,15 +33,15 @@ public class JsonUtils {
 
         JSONObject nameJson = Sandwich.getJSONObject(SANDWICH_NAME);
 
-        String mainName = nameJson.getString(SANDWICH_MAIN_NAME);
+        String mainName = nameJson.optString(SANDWICH_MAIN_NAME);
 
         JSONArray akaJsonArray = nameJson.getJSONArray(SANDWICH_AKA);
 
-        String origin = Sandwich.getString(SANDWICH_ORIGIN);
+        String origin = Sandwich.optString(SANDWICH_ORIGIN);
 
-        String description = Sandwich.getString(SANDWICH_DESCRIPTION);
+        String description = Sandwich.optString(SANDWICH_DESCRIPTION);
 
-        String image = Sandwich.getString(SANDWICH_IMAGE);
+        String image = Sandwich.optString(SANDWICH_IMAGE);
 
         JSONArray ingredientsJsonArray = Sandwich.getJSONArray(SANDWICH_INGREDIENTS);
 
